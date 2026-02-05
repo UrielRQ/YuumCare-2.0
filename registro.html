@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - YuumCare</title>
+</head>
+<body>
+
+    <a href="index.html">← Volver al Inicio</a>
+
+    <h2>Registro de Pacientes</h2>
+
+    <form>
+        <label for="nombre">Nombre :</label><br>
+        <input type="text" id="nombre" name="nombre"><br><br>
+
+        <label for="apellido">Apellido:</label><br>
+        <input type="text" id="apellido" name="apellido"><br><br>
+
+        <label for="correo">Correo electrónico:</label><br>
+        <input type="text" id="correo" name="correo"><br><br>
+
+        <label for="contraseña">Contraseña:</label><br>
+        <input type="password" id="contraseña" name="contraseña"><br><br>
+
+        <label for="cofirmar"> Confirmar contraseña:</label><br>
+        <input type="password" id="cofirmar" name="confirmar"><br><br>
+
+        <label for="carrera">Carrera:</label><br>
+        <input type="text" id="carrera" name="carrera"><br><br>
+
+        <button type="button">Registrar Paciente</button>
+    </form>
+
+    <hr>
+
+    <h3>Pacientes Registrados</h3>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Correo electrónico</th>
+                <th>Carrera</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Juan</td>
+                <td>Pérez</td>
+                <td>JuanPérez02@gmail.com</td>
+                <td>Ingeniería de Sistemas</td>
+                <td>
+                    <button>Editar</button>
+                    <button>Borrar</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Ana</td>
+                <td>García</td>
+                <td>Ana_Gar321@gmail.com</td>
+                <td>Administración</td>
+                <td>
+                    <button>Editar</button>
+                    <button>Borrar</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
