@@ -4,72 +4,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro - YuumCare</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <a href="index.html">← Volver al Inicio</a>
+    <nav class="topbar">
+        <div class="logo">
+            <img src="images/logo pequeño.png" alt="Logo YuumCare"> 
+            YUUMCARE
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            
+        </ul>
+    </nav>
 
-    <h2>Registro de Pacientes</h2>
+    <div class="registro-container">
+        
+        <div class="form-box">
+            <h1 class="page-title">Registro de Pacientes</h1>
+            <p class="subtitle">Completa la información para darte de alta en el sistema.</p>
 
-    <form>
-        <label for="nombre">Nombre :</label><br>
-        <input type="text" id="nombre" name="nombre"><br><br>
+            <form class="styled-form">
+                <div class="form-row">
+                    <div class="input-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan">
+                    </div>
+                    <div class="input-group">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" id="apellido" name="apellido" placeholder="Ej. Pérez">
+                    </div>
+                </div>
 
-        <label for="apellido">Apellido:</label><br>
-        <input type="text" id="apellido" name="apellido"><br><br>
+                <div class="input-group">
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo" name="correo" placeholder="correo@universidad.mx">
+                </div>
 
-        <label for="correo">Correo electrónico:</label><br>
-        <input type="text" id="correo" name="correo"><br><br>
+                <div class="input-group">
+                    <label for="carrera">Carrera</label>
+                    <input type="text" id="carrera" name="carrera" placeholder="Ej. Ingeniería de Sistemas">
+                </div>
 
-        <label for="contraseña">Contraseña:</label><br>
-        <input type="password" id="contraseña" name="contraseña"><br><br>
+                <div class="form-row">
+                    <div class="input-group">
+                        <label for="contraseña">Contraseña</label>
+                        <input type="password" id="contraseña" name="contraseña">
+                    </div>
+                    <div class="input-group">
+                        <label for="confirmar">Confirmar contraseña</label>
+                        <input type="password" id="confirmar" name="confirmar">
+                    </div>
+                </div>
 
-        <label for="cofirmar"> Confirmar contraseña:</label><br>
-        <input type="password" id="cofirmar" name="confirmar"><br><br>
+                <div class="boton-container">
+                    <button type="button" class="btn-submit">Registrar Paciente</button>
+                </div>
+            </form>
+        </div>
 
-        <label for="carrera">Carrera:</label><br>
-        <input type="text" id="carrera" name="carrera"><br><br>
+        <div class="table-box">
+            <h3>Pacientes Registrados</h3>
+            
+            <div class="table-responsive">
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Correo electrónico</th>
+                            <th>Carrera</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Juan</td>
+                            <td>Pérez</td>
+                            <td>JuanPérez02@gmail.com</td>
+                            <td>Ingeniería de Sistemas</td>
+                            <td>
+                                <button class="action-btn edit">Editar</button>
+                                <button class="action-btn delete">Borrar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Ana</td>
+                            <td>García</td>
+                            <td>Ana_Gar321@gmail.com</td>
+                            <td>Administración</td>
+                            <td>
+                                <button class="action-btn edit">Editar</button>
+                                <button class="action-btn delete">Borrar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
 
-        <button type="button">Registrar Paciente</button>
-    </form>
-
-    <hr>
-
-    <h3>Pacientes Registrados</h3>
-
-    <table border="1">
-        <thead>
-            <tr>
-                <th>Nombre</th>
-                <th>Apellido</th>
-                <th>Correo electrónico</th>
-                <th>Carrera</th>
-                <th>Acciones</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Juan</td>
-                <td>Pérez</td>
-                <td>JuanPérez02@gmail.com</td>
-                <td>Ingeniería de Sistemas</td>
-                <td>
-                    <button>Editar</button>
-                    <button>Borrar</button>
-                </td>
-            </tr>
-            <tr>
-                <td>Ana</td>
-                <td>García</td>
-                <td>Ana_Gar321@gmail.com</td>
-                <td>Administración</td>
-                <td>
-                    <button>Editar</button>
-                    <button>Borrar</button>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+    </div>
 
 </body>
 </html>
