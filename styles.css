@@ -55,7 +55,7 @@ body {
 
 /* boton de iniciar */
 .btn-login {
-    background-color: #e99f16; /* Verde lima */
+    background-color: #e99f16; 
     color: white;
     padding: 8px 25px;
     border-radius: 20px;
@@ -149,11 +149,8 @@ body {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 250px; /* Dale una altura fija en px para controlar mejor la curva */
-    
-    /* IMPORTANTE: Este color debe ser el del FONDO DE LA PÁGINA (gris claro/blanco), NO negro */
-    /* Si tu fondo es #1a1a1a, y quieres recortar, esto debe ser del color de la sección que sigue */
-    background-color: #0a0a0a; /* O el color que tengas en 'body' */
+    height: 250px; /* Altura */
+    background-color: #0a0a0a; 
     
     z-index: 10; /* Z-index positivo para que se ponga encima */
     
@@ -179,7 +176,7 @@ body {
 .cards-container {
     display: flex;
     justify-content: center;
-    gap: 60px;
+    gap: 150px;
     flex-wrap: wrap;
 }
 
@@ -194,6 +191,19 @@ body {
     justify-content: flex-start;
     clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 50% 100%, 0% 90%);
 }
+.step-circle {
+    width: 45px;
+    height: 45px;
+    background-color: #6dce66; /* verde claro */
+    color: #000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px auto; /* centra y da espacio */
+    font-weight: bold;
+}
+
 
 .icon-box {
     margin-bottom: 35px;
@@ -209,6 +219,26 @@ body {
     font-size: 1.1rem;
     line-height: 1.7;
     font-weight: 500;
+}
+
+/* --- HOW SECTION --- */
+.how-section {
+    padding: 60px 50px;
+    text-align: center;
+    background-color: #262829;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #E6C65B;
+    color: rgb(67, 53, 67);
+    flex: 1 1 200px;
 }
 
 /* --- ESTILOS DE LA PÁGINA DE REGISTRO --- */
@@ -259,7 +289,7 @@ body {
     border-radius: 10px;
     background-color: #fff;
     font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
+    font-size: 1rem; 
     outline: none;
     transition: border-color 0.3s;
 }
@@ -286,6 +316,7 @@ body {
 .input-group {
     margin-bottom: 20px;
     width: 100%;
+    color: #0a0a0a;
 }
 
 /* Botón de enviar */
