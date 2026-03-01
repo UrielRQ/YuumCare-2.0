@@ -13,21 +13,39 @@
 </head>
 <body>
 
-<nav class="topbar">
-    <div class="logo">
-        <img src="images/logo pequeño.png" alt="Logo YuumCare">
-        YUUMCARE
-    </div>
-    <ul class="nav-links">
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Como funciona</a></li>
-        <li><a href="#">Beneficios</a></li>
-        <li><a href="#">Contacto</a></li>
-        <li><a href="#" class="btn-login">Iniciar Sesión</a></li>
-    </ul>
-</nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo pequeño.png" alt="Logo YuumCare">
+            </div>
+            <a class="navbar-brand " href="#">YuumCare</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Que es">Qué es</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#como-funciona">Cómo funciona</a></li>
 
-<section class="hero">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Beneficios
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#beneficio1">Confidencial</a></li>
+                        <li><a class="dropdown-item" href="#beneficio2">Comunidad</a></li>
+                        <li><a class="dropdown-item" href="#beneficio3">Individual</a></li>
+                        </ul>
+                    </li>
+                
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<section id="inicio" class="hero">
     <div class="hero-text">
         <h1>Apoyo psicológico <br>en entornos <br>universitarios</h1>
 
@@ -44,25 +62,26 @@
     <div class="wave-bg"></div>
 </section>
 
-<section class="info-section">
+<section id="Que es" class="info-section">
     <h2 class="section-title">¿Qué es YuumCare?</h2>
 
     <div class="cards-container">
-        <div class="info-card">
+        
+        <div class="info-card py-5">
             <div class="icon-box">
                 <img src="images/Gestionar citas.png" alt="Gestionar citas">
             </div>
             <p>Permite una gestión eficiente de citas terapéuticas y evaluación psicológica inicial.</p>
         </div>
 
-        <div class="info-card">
+        <div class="info-card py-5">
             <div class="icon-box">
                 <img src="images/conversaciones.png" alt="conversaciones">
             </div>
             <p>Tus conversaciones son seguras, privadas y continuas.</p>
         </div>
 
-        <div class="info-card">
+        <div class="info-card py-5">
             <div class="icon-box">
                 <img src="images/conversacion remota.png" alt="conversacion remota">
             </div>
@@ -71,13 +90,12 @@
     </div>
 </section>
 
-<section class="how-section mb-5">
+<section id="como-funciona" class="how-section mb-5">
   <h2 class="section-title">¿Cómo funciona?</h2>
-  
-    <div class="row g-4">   
-        <h3>5 simples pasos para comenzar tu camino hacia el bienestar emocional.</h3>
+    <h3>5 simples pasos para comenzar tu camino hacia el bienestar emocional.</h3>
+    <div class="row g-5" style="justify-content: center;">   
 
-        <div class="col-md-2">
+        <div class="col-8 col-md-4 col-lg-2 py-5">
             <h3 class="step-circle">1</h3>
             <div class="card shadow-sm h-100">
                 <div class="card-body mt-3">
@@ -89,7 +107,7 @@
             </div>
         </div>
 
-        <div class="col-md-2">
+        <div class="col-8 col-md-4 col-lg-2 py-5">
             <h3 class="step-circle ">2</h3>
             <div class="card shadow-sm h-100">
                 <div class="card-body mt-3">
@@ -101,7 +119,7 @@
             </div>
         </div>
 
-        <div class="col-md-2">
+        <div class="col-8 col-md-4 col-lg-2 py-5">
             <h3 class="step-circle">3</h3>
             <div class="card shadow-sm h-100">
                 <div class="card-body mt-3">
@@ -113,7 +131,7 @@
             </div>
         </div>
 
-        <div class="col-md-2">
+        <div class="col-8 col-md-4 col-lg-2 py-5">
             <h3 class="step-circle">4</h3>
             <div class="card shadow-sm h-100">
                 <div class="card-body mt-3">
@@ -125,7 +143,7 @@
             </div>
         </div>
 
-        <div class="col-md-2">
+        <div class="col-8 col-md-4 col-lg-2 py-5">
             <h3 class="step-circle">5</h3>
             <div class="card shadow-sm h-100">
                 <div class="card-body mt-3">
@@ -139,6 +157,50 @@
 
     </div> 
 </section>
+
+<!-- Beneficios -->
+<section id="beneficios" class="beneficios-section">
+    <h2 class="section-title">Beneficios</h2>
+    <div class="container">
+      <h2 class="mb-4">Apoyo emocional pensando para tu vida universitaria.</h2>
+
+      <div class="row g-4">
+
+        <div class="col-12 col-md-6 col-lg-4" id="beneficio1">
+          <div class="card shadow-sm h-100">
+            <img src="images/beneficio1.png" class="card-img-top w-50 d-block mx-auto mt-3">
+            <div class="card-body">
+              <span class="badge bg-dark mb-2">Confidencial y seguro</span>
+              <p class="card-text"> Nuestra prioridad es que los estudiantes puedan expresarse con plena confianza.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 " id="beneficio2">
+          <div class="card shadow-sm h-100">
+            <img src="images/beneficio2.png" class="card-img-top w-50 d-block mx-auto mt-3">
+            <div class="card-body">
+              <span class="badge bg-dark mb-2">Comunidad de ayuda</span>
+              <p class="card-text">Contamos con un foro donde se pueden obtener recursos de soporte emocional, como talleres, videos , entre otros.</p>
+             
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4" id="beneficio3">
+          <div class="card shadow-sm h-100">
+            <img src="images/beneficio3.png" class="card-img-top w-50 d-block mx-auto mt-3">
+            <div class="card-body">
+              <span class="badge bg-dark mb-2">Terapia Individual</span>
+              <p class="card-text">Sesiones personalizadas con psicólogos especializados en el bienestar estudiantil.</p>
+              
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
 
 </body>
 </html>
